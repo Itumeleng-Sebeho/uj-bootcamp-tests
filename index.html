@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+
+</head>
+
+<body>
+    <h1>My unit tests</h1>
+    <!-- -->
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- the function to be tested -->
+    <script src="greet.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="test/greet.tests.js" charset="utf-8"></script>
+
+
+
+    <!-- the function to be tested -->
+    <script src="isfrombellville.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="test/isfrombellville.tests.js" charset="utf-8"></script>
+
+
+    <!-- the function to be tested -->
+    <script src="regcheck.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="test/regcheck.tests.js" charset="utf-8"></script>
+
+
+    <!-- the function to be tested -->
+    <script src="countregnumb.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="test/countregnumb.tests.js" charset="utf-8"></script>
+
+
+    <!-- the function to be tested -->
+    <script src="isweekday.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="test/isweekday.tests.js" charset="utf-8"></script>
+
+
+    <!-- the function to be tested -->
+    <script src="yearsago.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="test/yearsago.tests.js" charset="utf-8"></script>
+    <script>
+
+
+
+            mocha.checkLeaks();
+            mocha.run();
+    </script>
+</body>
+
+</html>
