@@ -7,6 +7,13 @@ describe('test my vehicle registration numbers', function () {
         // assert.equal("CY", regNum.startsWith("CY"), "This should not be true!");
 
     });
+    it("it should return 'MP' when called with 'MP' ", function () {
+        // assert.equal("CY", regNum.startsWith("CY"), "This should not be true!");
 
+});
+it("it should return 'GP' when called with 'GP' ", function () {
+    // assert.equal("CY", regNum.startsWith("CY"), "This should not be true!");
+
+});
 });
 
